@@ -23,7 +23,7 @@ During the installation, you'll be asked if you want to save the current IPv4 ru
 
 4. On the other computer, set the default gateway to 192.168.1.10. Open a terminal and run the following command:
 ```
-sudo route add default gw 192.168.1.10
+sudo ip route add default via 192.168.123.10
 ```
 
 5. Also configure DNS settings. Open the `/etc/resolv.conf` file in a text editor and add the following line:
