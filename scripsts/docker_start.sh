@@ -1,0 +1,1 @@
+sudo docker run --network host --privileged -it -v /dev:/dev robocaster/jetson-realsense:v1.0 
