@@ -1,0 +1,5 @@
+<launch>
+    <node pkg="realsense2_camera" type="jetson-23-camera-front.launch" name="camera_front" output="screen"/>
+    <node pkg="realsense2_camera" type="jetson-23-camera-front-downward.launch" name="camera_front_downward" output="screen"/>
+</launch>
+

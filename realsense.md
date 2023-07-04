@@ -85,5 +85,6 @@ For the Unitree robot, the following launch files are also avialable that simpli
 
 # Cameras On CRRL B1
 ## Jetson with IP 192.168.123.23
-- **Camera1:** 141122079634
-- **Camera2:** 141222071164
+- **Camera1 (Front Looking):** 141122079634
+- **Camera2 (Front Downward Looking):** 141222071164
+
