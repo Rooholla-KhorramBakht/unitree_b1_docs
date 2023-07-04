@@ -2,7 +2,7 @@ import socket
 
 LIDAR_IP = "192.168.123.200"
 PC_IP =    "192.168.123.1"
-RPM = 1200
+RPM = 600
 
 
 def send_udp_payload(payload, ip, port):
@@ -33,7 +33,7 @@ payload_600RPM = bytes([0xAA,0x00,0xFF,0x11,0x22,0x22,0xAA,0xAA,              #H
                         0x1E,0x6C,                                             #DIFOP Port1
                         0x1E,0x6C,                                             #DIFOP Port1
                         0x00, 0x00,                                            #FOV Starting Angle
-                        0x2E, 0xE0,                                            #FOV End Angle
+                        0x8C, 0xA0,                                            #FOV End Angle
                         0x11,0x03,0x0A,0x09,0x2D,0x1E,0x00,0x64,0x00,0xC8,     #UTC Time (Year, Month, Day, Hour, Minute, Second, Millisecond, Microsecond)
                         0x00, 0x5A])                                           #Motor Phase Lock
 
@@ -47,7 +47,7 @@ payload_1200RPM = bytes([0xAA,0x00,0xFF,0x11,0x22,0x22,0xAA,0xAA,              #
                         0x1E,0x6C,                                             #DIFOP Port1
                         0x1E,0x6C,                                             #DIFOP Port1
                         0x00, 0x00,                                            #FOV Starting Angle
-                        0x2E, 0xE0,                                            #FOV End Angle
+                        0x8C, 0xA0,                                            #FOV End Angle
                         0x11,0x03,0x0A,0x09,0x2D,0x1E,0x00,0x64,0x00,0xC8,     #UTC Time (Year, Month, Day, Hour, Minute, Second, Millisecond, Microsecond)
                         0x00, 0x5A])                                           #Motor Phase Lock
 
